@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Advanced Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Navigation in upper-right */
+    .nav {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #1a0dab;
+      font-size: 14px;
+    }
+    /* Container for the advanced search form */
+    .form-container {
+      margin: 80px auto;
+      width: 50%;
+      text-align: left;
+    }
+    .form-container label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-container input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px;
+    }
+    .form-container input[type="submit"] {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Google Search</a>
+  </div>
+  <div class="form-container">
+    <form action="https://www.google.com/search" method="get">
+      <div>
+        <label for="allWords">Find pages with… "all these words:"</label>
+        <input type="text" id="allWords" name="as_q" placeholder="e.g., apple orange">
+      </div>
+      <div>
+        <label for="exactPhrase">Find pages with… "this exact word or phrase:"</label>
+        <input type="text" id="exactPhrase" name="as_epq" placeholder="e.g., \"red apple\"">
+      </div>
+      <div>
+        <label for="anyWords">Find pages with… "any of these words:"</label>
+        <input type="text" id="anyWords" name="as_oq" placeholder="e.g., banana mango">
+      </div>
+      <div>
+        <label for="noneWords">Find pages with… "none of these words:"</label>
+        <input type="text" id="noneWords" name="as_eq" placeholder="e.g., rotten">
+      </div>
+      <input type="submit" value="Advanced Search">
+    </form>
+  </div>
+</body>
+</html>
+
 
